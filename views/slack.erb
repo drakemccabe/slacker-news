@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Slacker News</title>
+    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+    <link rel="icon" type="image/gif" href="https://news.ycombinator.com/y18.gif">
+
+  </head>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="https://news.ycombinator.com/"><img src="https://news.ycombinator.com/y18.gif"><strong>  Slacker News</strong></a></li>
+        <li><a href="https://news.ycombinator.com/newest">new</a> | </li>
+        <li><a href="https://news.ycombinator.com/newcomments">comments</a> | </li>
+        <li><a href="https://news.ycombinator.com/show">show</a> | </li>
+        <li><a href="https://news.ycombinator.com/ask">ask</a> | </li>
+        <li><a href="https://news.ycombinator.com/jobs">jobs</a> | </li>
+        <li><a href="https://news.ycombinator.com/submit">submit</a></li>
+        <li><a href="https://news.ycombinator.com/login?goto=news">login</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </nav>
+ </header>
+  <body>
+    <div class="posts">
+    <ul class='content'>
+      <%= @send %>
+    </ul>
+  </div>
+  <div class="more">
+    <p class="morebutton"><a href="https://news.ycombinator.com/news?p=2">More</a></p>
+  </div>
+  </body>
+  <footer>
+    <ul class="footer">
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Guidelines</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">FAQ</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Support</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">API</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Security</a> | <li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Lists</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Bookmarklet</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">DMCA</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Apply to YC</a> | </li>
+      <li><a href="https://news.ycombinator.com/newsguidelines.html">Contact</a></li>
+    </ul>
+    <form>
+      Search:
+      <input type="search" name="search">
+    </form>
+  </footer>
+</html>
